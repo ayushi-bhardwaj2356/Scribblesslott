@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#F6E6DE"/>
+  <circle cx="400" cy="430" r="250" fill="#FAF7F2"/>
+  <path d="M400 150 v70" stroke="#C9A78B" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="400" cy="140" r="28" fill="none" stroke="#7B4C46" stroke-width="10"/>
+  <circle cx="400" cy="250" r="18" fill="none" stroke="#C9A78B" stroke-width="8"/>
+  <path d="M400 268 v40" stroke="#C9A78B" stroke-width="8"/>
+  <circle cx="400" cy="520" r="168" fill="#EBCBD6" stroke="#7B4C46" stroke-width="8"/>
+  <circle cx="400" cy="520" r="132" fill="#F8E7EF" opacity="0.9"/>
+  <circle cx="340" cy="470" r="10" fill="#C9A78B"/>
+  <circle cx="470" cy="500" r="7" fill="#C9A78B"/>
+  <circle cx="420" cy="590" r="6" fill="#7B4C46" opacity="0.45"/>
+  <circle cx="300" cy="540" r="5" fill="#FFFFFF"/>
+  <text x="400" y="555" text-anchor="middle" font-family="Georgia, serif" font-size="92" fill="#7B4C46">A</text>
+</svg>

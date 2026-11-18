@@ -1,0 +1,320 @@
+.shop-toolbar {
+  display: grid;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.shop-toolbar label,
+.field {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--brown);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.shop-toolbar input,
+.shop-toolbar select,
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.85rem 0.95rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+  color: var(--ink);
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.field textarea {
+  resize: vertical;
+}
+
+.result-count {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.empty-state {
+  padding: 2rem 0 1rem;
+}
+
+.empty-state .btn {
+  margin-top: 1rem;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 0.45rem;
+  margin-bottom: 1.2rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.detail {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.detail__image {
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--peach);
+  aspect-ratio: 4 / 5;
+}
+
+.detail__thumbs {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 0.7rem;
+}
+
+.detail__thumbs button {
+  width: 74px;
+  height: 74px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 14px;
+  background: var(--peach);
+  cursor: pointer;
+}
+
+.detail__thumbs button.is-active {
+  border-color: var(--brown);
+}
+
+.detail__price {
+  font-family: var(--serif);
+  font-size: 2rem;
+  color: var(--brown-deep);
+}
+
+.detail__info > p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.detail__meta {
+  display: grid;
+  gap: 0.8rem;
+  margin: 1.3rem 0;
+  padding: 0;
+  list-style: none;
+}
+
+.detail__meta li {
+  display: grid;
+  gap: 0.15rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.detail__meta span {
+  color: var(--gold);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.related {
+  margin-top: 3.5rem;
+}
+
+.form-layout,
+.contact-layout {
+  display: grid;
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.form-card,
+.form-aside,
+.contact-card,
+.story-grid article,
+.quote-block {
+  padding: 1.3rem;
+  border-radius: 28px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.form-card__head p:last-child,
+.form-aside p,
+.prose p,
+.quote-block p,
+.about-artists {
+  color: var(--muted);
+}
+
+.form-card__head {
+  margin-bottom: 1rem;
+}
+
+.form-switch,
+.occasion-picks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.form-switch button,
+.occasion-picks button {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--cream);
+  padding: 0.45rem 0.8rem;
+  cursor: pointer;
+}
+
+.form-switch button.is-active,
+.occasion-picks button.is-active {
+  background: var(--brown);
+  border-color: var(--brown);
+  color: var(--cream);
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.field {
+  margin-bottom: 0.85rem;
+}
+
+.form-grid .field {
+  margin-bottom: 0;
+}
+
+.field--error input,
+.field--error select,
+.field--error textarea {
+  border-color: #a15a52;
+}
+
+.field__error,
+.form-notice {
+  color: #8a3d36;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 0.88rem;
+}
+
+.form-notice {
+  margin-bottom: 0.8rem;
+}
+
+.success-card {
+  display: grid;
+  gap: 0.8rem;
+  justify-items: start;
+}
+
+.form-aside ol {
+  margin: 0 0 1rem;
+  padding-left: 1.1rem;
+  color: var(--ink);
+}
+
+.contact-cards {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--brown-deep);
+}
+
+.contact-card svg {
+  flex: none;
+}
+
+.contact-card span {
+  display: grid;
+}
+
+.contact-card small {
+  color: var(--muted);
+}
+
+.about-intro {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.story-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.quote-block blockquote {
+  margin: 0 0 1rem;
+  font-family: var(--serif);
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.25;
+  color: var(--brown-deep);
+}
+
+.note-list {
+  display: grid;
+  gap: 0.7rem;
+  margin: 0 0 1.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.note-list li {
+  padding: 0.9rem 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.about-artists {
+  max-width: 680px;
+  margin-bottom: 1.2rem;
+}
+
+.prose {
+  display: grid;
+  gap: 1rem;
+  max-width: 720px;
+}
+
+@media (min-width: 760px) {
+  .shop-toolbar,
+  .form-grid,
+  .story-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shop-toolbar {
+    grid-template-columns: 1.4fr 1fr 1fr;
+  }
+
+  .detail,
+  .form-layout,
+  .contact-layout {
+    grid-template-columns: 1.05fr 0.95fr;
+  }
+
+  .contact-cards {
+    align-content: start;
+  }
+}
+
+@media (min-width: 980px) {
+  .note-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --peach: #f6e6de;
+  --blush: #ebcbd6;
+  --cream: #faf7f2;
+  --brown: #7b4c46;
+  --brown-deep: #5c3834;
+  --gold: #c9a78b;
+  --white: #ffffff;
+  --ink: #3f2a27;
+  --muted: #8d6e68;
+  --line: rgba(123, 76, 70, 0.16);
+  --shadow: 0 18px 40px rgba(123, 76, 70, 0.08);
+  --radius: 22px;
+  --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --sans: "Poppins", "Segoe UI", sans-serif;
+  --script: "Great Vibes", cursive;
+  --header: 118px;
+  --space: clamp(3.5rem, 7vw, 6.5rem);
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+  <rect width="800" height="1000" fill="#F6E6DE"/>
+  <rect x="210" y="180" width="380" height="500" rx="28" fill="#FFFFFF" stroke="#EBCBD6" stroke-width="8"/>
+  <rect x="245" y="214" width="310" height="360" rx="16" fill="#EBCBD6"/>
+  <circle cx="360" cy="360" r="46" fill="#FAF7F2"/>
+  <path d="M300 500c40-70 80-70 120-20 30 36 70 40 120 8v86H300z" fill="#C9A78B"/>
+  <rect x="245" y="600" width="310" height="46" fill="#FAF7F2"/>
+  <text x="400" y="632" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#7B4C46">for you</text>
+</svg>

@@ -1,0 +1,12 @@
+node_modules/
+.mongo-data/
+dist/
+.env
+client/.env
+server/.env
+*.log
+_pdfextract/
+_pdfpages/
+_pdfimages/
+_crops/
+_pdf-text.txt
