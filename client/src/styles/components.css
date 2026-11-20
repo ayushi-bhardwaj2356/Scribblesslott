@@ -259,6 +259,14 @@
   margin-bottom: 1rem;
 }
 
+.founder__sign {
+  margin: 0.2rem 0 1rem;
+  font-family: var(--script);
+  font-size: 2.1rem;
+  line-height: 1;
+  color: var(--brown);
+}
+
 .gallery figure {
   margin: 0;
   overflow: hidden;

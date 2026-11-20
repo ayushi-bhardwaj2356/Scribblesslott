@@ -85,7 +85,7 @@ export default function Shop() {
             {loading ? 'Gathering the collection…' : `${visible.length} gift${visible.length === 1 ? '' : 's'}`}
           </p>
 
-          {visible.length ? (
+          {loading ? null : visible.length ? (
             <div className="product-grid">
               {visible.map((product) => (
                 <ProductCard key={product.slug} product={product} />

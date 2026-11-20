@@ -5,6 +5,8 @@ import Product from './models/Product.js';
 import products from './data/products.js';
 
 export async function seedProducts() {
+  const slugs = products.map((product) => product.slug);
+
   for (const product of products) {
     await Product.findOneAndUpdate({ slug: product.slug }, product, {
       upsert: true,
@@ -13,7 +15,8 @@ export async function seedProducts() {
     });
   }
 
-  console.log(`Seeded ${products.length} products`);
+  const removed = await Product.deleteMany({ slug: { $nin: slugs } });
+  console.log(`Seeded ${products.length} products. Removed ${removed.deletedCount} old products.`);
 }
 
 const runDirectly = process.argv[1] && process.argv[1].endsWith('seed.js');

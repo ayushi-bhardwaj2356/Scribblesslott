@@ -55,10 +55,9 @@ Copy `client/.env.example` if `.env` is missing.
 
 The business WhatsApp number is read from `VITE_WHATSAPP_NUMBER`. Change it in `client/.env`, then restart the frontend. It is not written through the React code.
 
-The copy of `.env` in this project is already filled from the Scribblesslott contact card:
+The copy of `.env` in this project is already filled for Scribblesslott:
 
-- WhatsApp: `916375869121`
-- Second phone: `919352059073`
+- WhatsApp (order messages): `919352059073`
 - Email: `scribblesslott@gmail.com`
 - Instagram: `https://www.instagram.com/scribblesslott/`
 
@@ -136,12 +135,12 @@ npm run dev --prefix client
 | Prices, names, descriptions | `server/data/products.js`, then `npm run seed` |
 | Product photographs | Replace files in `client/public/images/products` and keep the same file name, or change the path in the catalogue |
 | Founder photograph | Replace `client/public/images/founder.jpg` |
-| Logo | The site uses a monogram “S”. Swap `client/src/components/Logo.jsx` if you have a final logo file |
+| Logo | `client/public/images/logo.jpg` — the SS monogram |
 | Gallery | `client/src/pages/Home.jsx` |
 
-A few products (resin keychain, fridge magnet, ribbon bouquet, lippan art and the pouch) use illustrated placeholders because those photographs were not in the brand deck. Replace the `.svg` files with your photos when you have them.
+Photo magazines and frames are the most loved pieces, shown in their own section on the home page.
 
-Photo magazines and frames are marked as the most loved pieces.
+Two products from the first list are waiting on photographs before they go on the site: the acrylic fridge magnet and the personalized pouch. Send those pictures and they can be added to the catalogue.
 
 ## This version does not include
 

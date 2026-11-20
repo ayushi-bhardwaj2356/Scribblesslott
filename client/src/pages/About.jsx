@@ -31,15 +31,21 @@ export default function About() {
             <p className="eyebrow">Founder</p>
             <h2>Ayushi Bhardwaj</h2>
             <p>
-              What started with a love for art and creativity has grown into a brand where memories, emotions and
-              relationships are turned into handmade gifts. Ayushi blends that creative work with a practical wish:
-              personalized gifting should be meaningful, and it should also be affordable.
+              I started Scribblesslott in 2022 because I love making things, and because I was tired of gifts that
+              could have been for anyone. A good gift should know the person. It should carry a name, a photograph,
+              a joke only they will understand, or the date of a day they will want to remember.
             </p>
             <p>
-              Scribblesslott is founder-led. The magazines, frames, hampers, resin pieces and bouquets are made to
-              be specific to someone — a name, a photograph, a day — rather than pulled from a pile of identical
-              things.
+              The studio is still mine, still in Jaipur, and still small on purpose. Photo magazines and frames are
+              what people order most. Around them I make resin, lippan, bouquets, cards and hampers — each one
+              built for one occasion and one budget. I would rather make one careful gift than a hundred identical
+              ones.
             </p>
+            <p>
+              If you are holding an idea and you are not sure it can be made, send it. That is usually where the
+              work I am proudest of begins.
+            </p>
+            <p className="founder__sign">Ayushi</p>
           </div>
         </div>
       </section>

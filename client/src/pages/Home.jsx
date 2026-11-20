@@ -29,18 +29,23 @@ const reasons = [
 ];
 
 const gallery = [
-  { src: '/images/products/photo-magazine.jpg', alt: 'Customized photo magazine' },
-  { src: '/images/products/photo-frame.jpg', alt: 'Personalized photo frame', position: '72% center' },
-  { src: '/images/products/gift-hamper.jpg', alt: 'Wrapped gift hamper' },
-  { src: '/images/products/collage-frame.jpg', alt: 'Photo collage frame' },
-  { src: '/images/products/custom-bouquet.jpg', alt: 'Custom photo bouquet', position: '80% center' },
-  { src: '/images/products/wooden-plaque.jpg', alt: 'Wooden photo plaque', position: '78% center' },
+  { src: '/images/products/magazine-udaipur.jpg', alt: 'Customized photo magazine' },
+  { src: '/images/products/frame-couple.jpg', alt: 'Personalized photo frame' },
+  { src: '/images/products/photo-bouquet.jpg', alt: 'Custom photo bouquet' },
+  { src: '/images/products/lippan-peacock.jpg', alt: 'Handmade lippan art' },
+  { src: '/images/products/chocolate-bouquet.jpg', alt: 'Chocolate bouquet' },
+  { src: '/images/products/resin-tray.jpg', alt: 'Floral resin tray' },
 ];
 
 export default function Home() {
   usePageTitle('');
   const { products, loading } = useProducts();
-  const featured = products.filter((product) => product.featured).slice(0, 8);
+  const photoGifts = products
+    .filter((product) => product.featured && product.category === 'Photo Gifts')
+    .slice(0, 3);
+  const handmadeGifts = products
+    .filter((product) => product.featured && product.category !== 'Photo Gifts')
+    .slice(0, 5);
 
   return (
     <>
@@ -64,13 +69,13 @@ export default function Home() {
 
           <div className="hero__collage" aria-hidden="true">
             <figure>
-              <img src="/images/products/photo-magazine.jpg" alt="" />
+              <img src="/images/products/magazine-vogue.jpg" alt="" />
             </figure>
             <figure>
-              <img src="/images/products/photo-frame.jpg" alt="" style={{ objectPosition: '72% center' }} />
+              <img src="/images/products/frame-collage.jpg" alt="" />
             </figure>
             <figure>
-              <img src="/images/products/gift-hamper.jpg" alt="" />
+              <img src="/images/products/ribbon-roses.jpg" alt="" />
             </figure>
           </div>
         </div>
@@ -100,12 +105,27 @@ export default function Home() {
         <div className="container">
           <div className="section__head">
             <p className="eyebrow">Most loved</p>
-            <h2>Featured gifts</h2>
-            <p>Customized photo magazines and frames are the pieces people come back for.</p>
+            <h2>Photo magazines & frames</h2>
+            <p>These are the gifts people come back for. A name, a date, and photographs that already belong to someone.</p>
           </div>
           {loading ? <p className="muted">Gathering the collection…</p> : null}
           <div className="product-grid">
-            {featured.map((product) => (
+            {photoGifts.map((product) => (
+              <ProductCard key={product.slug} product={product} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="section__head">
+            <p className="eyebrow">Also made to order</p>
+            <h2>Bouquets, hampers & art</h2>
+            <p>Handmade pieces for birthdays, home, and the days that need more than a card.</p>
+          </div>
+          <div className="product-grid">
+            {handmadeGifts.map((product) => (
               <ProductCard key={product.slug} product={product} />
             ))}
           </div>
@@ -145,13 +165,19 @@ export default function Home() {
         <div className="container founder">
           <img src="/images/founder.jpg" alt="Ayushi Bhardwaj, founder of Scribblesslott" />
           <div>
-            <p className="eyebrow">The founder</p>
-            <h2>Ayushi Bhardwaj</h2>
+            <p className="eyebrow">A note from the founder</p>
+            <h2>I make gifts the way I would want to receive them.</h2>
             <p>
-              What started with my love for art and creativity in 2022 has grown into Scribblesslott — a brand
-              where creativity meets emotions. Every creation is made to turn little moments into memories that
-              people cherish forever.
+              In 2022 I started Scribblesslott from a small table in Jaipur, because the gifts I wanted to give
+              were not sitting in shops. I wanted a magazine with someone’s name on the cover. A frame that held
+              a whole friendship, not one stiff photograph. A hamper that felt chosen, not packed.
             </p>
+            <p>
+              That is still the work. Every order comes to me with a name, a few photographs, an occasion and a
+              budget. I make it by hand in Jaipur, then send it across India. If you have an idea that is not on
+              this page, write to me. The best pieces usually begin that way.
+            </p>
+            <p className="founder__sign">Ayushi Bhardwaj</p>
             <Link className="btn btn--ghost" to="/about">
               Read our story
             </Link>

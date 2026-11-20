@@ -8,7 +8,7 @@ function normalize(product) {
   return {
     ...product,
     id: product._id || product.slug,
-    images: product.images?.length ? product.images : ['/images/products/pouch.svg'],
+    images: product.images?.length ? product.images : ['/images/products/magazine-vogue.jpg'],
   };
 }
 
